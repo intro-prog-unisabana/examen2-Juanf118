@@ -59,7 +59,7 @@ def fastest_lap(timer):
     # TODO: Implementar
     times = timer.get('times', [])
     if times:
-        return max(times)
+        return min(times)
 
 
 def fastest_multi_lap(timer, k):
