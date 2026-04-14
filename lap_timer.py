@@ -70,7 +70,7 @@ def fastest_multi_lap(timer, k):
     # TODO: Implementar
     times = timer.get('times', [])
     if len(times) < k:
-        return None  # No hay suficientes vueltas para calcular
+        return None 
 
     min_sum = float('inf')
     for i in range(len(times) - k + 1):
