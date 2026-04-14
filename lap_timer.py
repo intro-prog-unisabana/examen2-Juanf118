@@ -87,7 +87,9 @@ def longest_decreasing_streak(timer):
     """
     # TODO: Implementar
     racha = timer.get('times', [])
-    max_streak = 0
+    if not racha:
+        return None
+    max_streak = 1
     current_streak = 1
     for i in range(1, len(racha)):
         if racha[i] < racha[i - 1]:
@@ -97,7 +99,6 @@ def longest_decreasing_streak(timer):
         else:
             current_streak = 1
     return max_streak
-
 
 def main():
     # crear un cronometro para el record mundial de 100m de Usain Bolt,
