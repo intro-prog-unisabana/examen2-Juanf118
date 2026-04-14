@@ -58,7 +58,10 @@ def fastest_lap(timer):
     """
     # TODO: Implementar
     times = timer.get('times', [])
-    return min(times) if times else None
+    if not times:
+        return None
+        
+    return min(times)
     
 
 
