@@ -86,7 +86,17 @@ def longest_decreasing_streak(timer):
     donde los tiempos disminuyen estrictamente.
     """
     # TODO: Implementar
-    pass
+    racha = timer.get('times', [])
+    max_streak = 0
+    current_streak = 1
+    for i in range(1, len(racha)):
+        if racha[i] < racha[i - 1]:
+            current_streak += 1
+            if current_streak > max_streak:
+                max_streak = current_streak
+        else:
+            current_streak = 1
+    return max_streak
 
 
 def main():
