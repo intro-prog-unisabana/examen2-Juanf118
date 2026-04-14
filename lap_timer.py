@@ -60,7 +60,6 @@ def fastest_lap(timer):
     times = timer.get('times', [])
     if times:
         return max(times)
-    return None
 
 
 def fastest_multi_lap(timer, k):
