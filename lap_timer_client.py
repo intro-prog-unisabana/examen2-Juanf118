@@ -18,7 +18,7 @@ def main():
     
     # TODO: Leer los n tiempos de vuelta y agregarlos con lap_timer.add_lap()
     with open(filename, "r") as file:
-        file.readline()  # Saltar la primera línea que contiene n
+        file.readline()  
         for i in range(n):
             time = float(file.readline().strip())
             timer = lap_timer.add_lap(timer, time)
