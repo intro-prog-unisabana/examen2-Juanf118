@@ -12,7 +12,6 @@ def init(max_laps):
     Crea y retorna un diccionario para almacenar hasta max_laps vueltas.
     """
     # TODO: Implementar
-    
     timer = {'max': max_laps, 'times': [], 'total': 0.0}
     return timer
 
@@ -22,7 +21,9 @@ def add_lap(timer, time):
     Retorna el diccionario modificado.
     """
     # TODO: Implementar
-    pass
+    timer.update({'times': timer['times'] + [time], 'total': timer['total'] + time})
+    return timer
+    
 
 
 def count(timer):
