@@ -40,7 +40,7 @@ def cumulative_time(timer):
     Retorna el tiempo acumulado de todas las vueltas.
     """
     # TODO: Implementar
-    return timer['total']
+    return sum(timer.get('times', []))
 
 
 def format_laps(timer):
