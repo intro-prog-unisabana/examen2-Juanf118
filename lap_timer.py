@@ -40,7 +40,7 @@ def cumulative_time(timer):
     Retorna el tiempo acumulado de todas las vueltas.
     """
     # TODO: Implementar
-    pass
+    return timer['total']
 
 
 def format_laps(timer):
@@ -49,7 +49,7 @@ def format_laps(timer):
     Formato: [t1, t2, t3, ..., tn]
     """
     # TODO: Implementar
-    pass
+    return str(timer['times'])
 
 
 def fastest_lap(timer):
