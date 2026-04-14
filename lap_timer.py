@@ -57,11 +57,9 @@ def fastest_lap(timer):
     Retorna el tiempo mas rapido de cualquier vuelta.
     """
     # TODO: Implementar
-    times = timer.get('times', [])
-    if not times:
-        return None
-        
-    return min(times)
+    fastest_time = timer.get('times', [])
+
+    return min(fastest_time)
     
 
 
